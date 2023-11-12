@@ -12,7 +12,7 @@ int main() {
         Node* root = NULL;
         AVLTree avl_tree = AVLTree(root);
         cin >> Q;
-        for (int i = 0;i < Q;i++) {
+        for (int i = 0; i < Q; i++) {
             cin >> s;
             if (s == "empty") avl_tree.is_empty();
             else if (s == "size") avl_tree.size();
