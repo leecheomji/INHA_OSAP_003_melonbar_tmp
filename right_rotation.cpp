@@ -6,5 +6,7 @@ Node* AVLTree::right_rotation(Node* z) {
     z->left = y->right;
     y->right = z;
 
+    height_renewal(z);
+    height_renewal(y);
     return y;
 }
